@@ -139,7 +139,7 @@ public class ActivityScanerCode extends ActivityBase {
     @Override
     protected void onResume() {
         super.onResume();
-        SurfaceView surfaceView = findViewById(R.id.capture_preview);
+        SurfaceView surfaceView = (SurfaceView) findViewById(R.id.capture_preview);
         SurfaceHolder surfaceHolder = surfaceView.getHolder();
         if (hasSurface) {
             //Camera初始化
@@ -187,10 +187,10 @@ public class ActivityScanerCode extends ActivityBase {
     }
 
     private void initView() {
-        mIvLight = findViewById(R.id.top_mask);
-        mContainer = findViewById(R.id.capture_containter);
-        mCropLayout = findViewById(R.id.capture_crop_layout);
-        mLlScanHelp = findViewById(R.id.ll_scan_help);
+        mIvLight = (ImageView) findViewById(R.id.top_mask);
+        mContainer = (RelativeLayout) findViewById(R.id.capture_containter);
+        mCropLayout = (RelativeLayout) findViewById(R.id.capture_crop_layout);
+        mLlScanHelp = (LinearLayout) findViewById(R.id.ll_scan_help);
 
 
     }
@@ -204,7 +204,7 @@ public class ActivityScanerCode extends ActivityBase {
     }
 
     private void initScanerAnimation() {
-        ImageView mQrLineView = findViewById(R.id.capture_scan_line);
+        ImageView mQrLineView = (ImageView) findViewById(R.id.capture_scan_line);
         RxAnimationTool.ScaleUpDowm(mQrLineView);
     }
 

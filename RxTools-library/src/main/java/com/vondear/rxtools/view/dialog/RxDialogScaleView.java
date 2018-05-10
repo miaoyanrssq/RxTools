@@ -112,9 +112,9 @@ public class RxDialogScaleView extends RxDialog {
 
     private void initView() {
         View dialogView = LayoutInflater.from(mContext).inflate(R.layout.dialog_scaleview, null);
-        mRxScaleImageView = dialogView.findViewById(R.id.rx_scale_view);
+        mRxScaleImageView = (RxScaleImageView) dialogView.findViewById(R.id.rx_scale_view);
         mRxScaleImageView.setMaxScale(maxScale);
-        ImageView ivClose =  dialogView.findViewById(R.id.iv_close);
+        ImageView ivClose = (ImageView) dialogView.findViewById(R.id.iv_close);
         ivClose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

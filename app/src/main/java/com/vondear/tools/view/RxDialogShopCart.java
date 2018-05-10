@@ -43,13 +43,13 @@ public class RxDialogShopCart extends Dialog implements View.OnClickListener, Sh
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cart_popupview);
-        linearLayout = findViewById(R.id.linearlayout);
-        clearLayout = findViewById(R.id.clear_layout);
-        shopingcartLayout = findViewById(R.id.shopping_cart_layout);
-        bottomLayout = findViewById(R.id.shopping_cart_bottom);
-        totalPriceTextView = findViewById(R.id.shopping_cart_total_tv);
-        totalPriceNumTextView = findViewById(R.id.shopping_cart_total_num);
-        recyclerView = findViewById(R.id.recycleview);
+        linearLayout = (LinearLayout) findViewById(R.id.linearlayout);
+        clearLayout = (LinearLayout) findViewById(R.id.clear_layout);
+        shopingcartLayout = (FrameLayout) findViewById(R.id.shopping_cart_layout);
+        bottomLayout = (LinearLayout) findViewById(R.id.shopping_cart_bottom);
+        totalPriceTextView = (TextView) findViewById(R.id.shopping_cart_total_tv);
+        totalPriceNumTextView = (TextView) findViewById(R.id.shopping_cart_total_num);
+        recyclerView = (RecyclerView) findViewById(R.id.recycleview);
         shopingcartLayout.setOnClickListener(this);
         bottomLayout.setOnClickListener(this);
         clearLayout.setOnClickListener(this);

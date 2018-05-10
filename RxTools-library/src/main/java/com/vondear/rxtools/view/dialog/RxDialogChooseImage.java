@@ -120,9 +120,9 @@ public class RxDialogChooseImage extends RxDialog {
         }
 
 
-        mTvCamera = dialogView.findViewById(R.id.tv_camera);
-        mTvFile = dialogView.findViewById(R.id.tv_file);
-        mTvCancel = dialogView.findViewById(R.id.tv_cancel);
+        mTvCamera = (TextView) dialogView.findViewById(R.id.tv_camera);
+        mTvFile = (TextView) dialogView.findViewById(R.id.tv_file);
+        mTvCancel = (TextView) dialogView.findViewById(R.id.tv_cancel);
         mTvCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
@@ -162,9 +162,9 @@ public class RxDialogChooseImage extends RxDialog {
                 break;
         }
 
-        mTvCamera =  dialogView.findViewById(R.id.tv_camera);
-        mTvFile =  dialogView.findViewById(R.id.tv_file);
-        mTvCancel =  dialogView.findViewById(R.id.tv_cancel);
+        mTvCamera = (TextView) dialogView.findViewById(R.id.tv_camera);
+        mTvFile = (TextView) dialogView.findViewById(R.id.tv_file);
+        mTvCancel = (TextView) dialogView.findViewById(R.id.tv_cancel);
         mTvCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {

@@ -123,7 +123,7 @@ public class RxDialogWheelYearMonthDay extends RxDialog {
         }
 
         //mYearView
-        mYearView = dialogView1.findViewById(R.id.wheelView_year);
+        mYearView = (WheelView) dialogView1.findViewById(R.id.wheelView_year);
         mYearView.setBackgroundResource(R.drawable.transparent_bg);
         mYearView.setWheelBackground(R.drawable.transparent_bg);
         mYearView.setWheelForeground(R.drawable.wheel_val_holo);
@@ -134,7 +134,7 @@ public class RxDialogWheelYearMonthDay extends RxDialog {
 
 
         // mMonthView
-        mMonthView = dialogView1
+        mMonthView = (WheelView) dialogView1
                 .findViewById(R.id.wheelView_month);
         mMonthView.setBackgroundResource(R.drawable.transparent_bg);
         mMonthView.setWheelBackground(R.drawable.transparent_bg);
@@ -147,7 +147,7 @@ public class RxDialogWheelYearMonthDay extends RxDialog {
 
 
         //mDayView
-        mDayView = dialogView1.findViewById(R.id.wheelView_day);
+        mDayView = (WheelView) dialogView1.findViewById(R.id.wheelView_day);
         updateDays(mYearView, mMonthView, mDayView);
         curDay = mCalendar.get(Calendar.DAY_OF_MONTH);
         mDayView.setCurrentItem(curDay - 1);
@@ -156,11 +156,11 @@ public class RxDialogWheelYearMonthDay extends RxDialog {
         mDayView.setWheelForeground(R.drawable.wheel_val_holo);
         mDayView.setShadowColor(0xFFDADCDB, 0x88DADCDB, 0x00DADCDB);
 
-        mTvSure = dialogView1.findViewById(R.id.tv_sure);
-        mTvCancle = dialogView1.findViewById(R.id.tv_cancel);
-        llType = dialogView1.findViewById(R.id.ll_month_type);
+        mTvSure = (TextView) dialogView1.findViewById(R.id.tv_sure);
+        mTvCancle = (TextView) dialogView1.findViewById(R.id.tv_cancel);
+        llType = (LinearLayout) dialogView1.findViewById(R.id.ll_month_type);
 
-        mCheckBoxDay = dialogView1.findViewById(R.id.checkBox_day);
+        mCheckBoxDay = (CheckBox) dialogView1.findViewById(R.id.checkBox_day);
         mCheckBoxDay.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
             @Override
